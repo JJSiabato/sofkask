@@ -1,0 +1,131 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*-------- selectores por tag --------*/
+body{
+    scroll-behavior: smooth;
+}
+footer{
+    width: 100%;;
+    position: absolute;
+    bottom: 0;
+}
+@media screen and (max-width: 600px) {
+    footer{
+        display:none;
+    }
+}
+header{
+    position: sticky;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0.5px 1px 0px rgba(0,0,0,0.5);
+}
+section{
+    height: 65vh ;
+}
+
+/*-------- selectores por clase --------*/
+
+.cards{
+    
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.2s;
+    height: 250px;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.cards:hover{
+    box-shadow: 4px 4px 6px 4px rgba(0,0,0,0.5);
+}
+.cards img{
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+.container-cards{
+    height: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+.container-cards > h4{
+    width: 200px;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.container-button{
+    position: relative;
+    margin: 0 !important;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+.container-button input{
+    width: 40%;
+    height: 2rem;
+    background-color: transparent;
+    border: 1px solid blue;
+    color: blue;
+    border-radius: 1rem;
+}
+.container-button input:hover{
+    background-color: rgba(103, 138, 204, 0.2);
+}
+.container-form{
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    max-width: 90%;
+    row-gap: 10px;
+}
+.container-form input{
+    margin-right: 10px;
+}
+.container-form p{
+    font-weight: 300;
+}
+
+.grid-fluid{
+    margin: 1rem auto;
+    padding: 1rem;
+    display: grid;
+    max-width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.footer{
+    text-align: center;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 0 2px 0px rgba(0,0,0,0.5);
+}
+.footer ul{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer ul a{
+    text-decoration: none;
+}
+.footer ul a:hover{
+    font-weight: 500;
+}
+.title{
+    padding-left: 3rem;
+    font-size: 1.5rem;
+}
