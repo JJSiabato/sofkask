@@ -4,6 +4,7 @@ import { CategoryCard } from "./CategoryCard.js";
 import InsertComponent from "../../behavior/InsertComponent.js";
 
 export function GroupCategory(){
+    console.log(users)
     let title = "Categorías"
     ajax({
         url: askApi.PHOTOS_API_URL,

@@ -1,4 +1,4 @@
-// creacion de elemento section
+// funcion constructora de elemento section
 
 export function Section(prop){
     const $section = document.createElement("section");

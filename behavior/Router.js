@@ -1,18 +1,21 @@
 import { GroupCategory } from "../components/categorias/GroupCards.js";
+import Main from "../components/otras/main.js";
 import { Test } from "../components/tests/Test.js";
 
 export function Router(){
     let {hash} = location;
-    console.log(hash)
 
     switch (hash) {
         case "#/" :
-            GroupCategory()
+            Main()
             break;
-        case "":
+        case "" :
+            Main()
+            break;
+        case "#/categories":
             GroupCategory()
             break;   
-        case "#/preguntas":
+        case "#/questions":
             Test();
             break;   
     

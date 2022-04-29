@@ -1,3 +1,4 @@
+//Funcion constructora de header
 export function Header(){
     const $header = document.createElement("header");
     $header.id = "header";
